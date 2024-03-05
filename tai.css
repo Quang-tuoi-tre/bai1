@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    
+}
+
+header{
+    background-color: #c7cc19;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    grid-column: 1 / span 2;
+}
+
+nav{
+    background-color: #ffa586;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    grid-column: 1 / span 2;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+/* nav ul:hover{
+    color: red;
+} */
+
+.product-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+    grid-column: 2;
+}
+
+.product-card{
+    background-color: #fff;
+    border: 2px solid grey;
+   border-style:dotted;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.product-card img{
+    max-width: 100%;
+    height: auto;
+
+}
+.product-card img:hover{
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+
+.sidebar{
+    background-color: #199cff;
+    color: #fff;
+    height: 40px;
+    padding: 10px;
+    grid-column: 1;
+    line-height: 20px;
+}
+
+.social-icons{
+    margin-top: 20px;
+}
+
+.social-icons a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 576px){
+    .product-list{
+        grid-template-columns: 1fr;
+    }
+
+    .product-card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .sidebar{
+        grid-column: 1 / span 2;
+    }
+    .footer{
+        grid-template-columns: 1fr;
+    }
+}
+.footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    grid-column: 1 / span 2;
+    display: grid;
+}
+
+.footer-item{
+    padding: 10px;
+}
+
+@media(min-width: 768px){
+    .footer{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+.button{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+.button:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+.button1{
+    border-radius: 2px;
+}
+
+.button3{
+    border-radius: 8px;
+}
+.button4{
+    border-radius: 12px;
+}
+.button5{
+    border-radius: 50px;
+}
+
+.h1 {
+    text-align: center;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.h2 {
+    text-align: center;
+}
+
+.p {
+    text-align: justify;
+}
+
+.a {
+    text-decoration: none;
+    color: blue;
+}
+
+.a:hover {
+    color: red;
+}

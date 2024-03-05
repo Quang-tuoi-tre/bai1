@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tai.css">
+</head>
+<body>
+   <header>
+    <h1>Trang Web Bán Hàng</h1>
+   </header>
+   <nav>
+    <ul>
+        <li><a href="">Trang Chủ</a></li>
+        <li><a href="">Sản phẩm</a></li>
+        <li><a href="">Liên Hệ</a></li>
+    </ul>
+   </nav>
+   
+    <div class="product-list">
+        <div class="product-card">
+            <img class="quang" src="iphone-15-plus-xanh-la-128gb-thumb-600x600.jpg" alt="">
+            <h2>iPhone 15 Plus</h2>
+            <p>6.1" Super Retina XDR</p>
+            <p>Giá:27.490.000₫</p>
+            <a style="text-decoration: none; color: white; font-weight: 200px;" href="hai.html">
+                <button class="button button4">Mua ngay</button>
+            </a>        </div>
+        <div class="product-card">
+            <img class="quang" src="iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="">
+            <h2>iPhone 15 Pro Max</h2>
+            <p>6.7" Super Retina XDR</p>
+            <p>Giá: 30.990.000₫</p>
+            <a style="text-decoration: none; color: white; font-weight: 200px;" href="hao.html">
+                <button class="button button4">Mua ngay</button>
+            </a>        </div>
+        <div class="product-card">
+            <img class="quang" src="oppo-reno-11-xanh-thumb-600x600.jpg" alt="">
+            <h2>OPPO Reno11 5G</h2>
+            <p>6.7" Full HD+</p>
+            <p>Giá: 10.690.000₫</p>
+            <a style="text-decoration: none; color: white; font-weight: 200px;" href="oppo.html">
+                <button class="button button4">Mua ngay</button>
+            </a>        </div>
+        <div class="product-card">
+            <img class="quang" src="vivo-y17-tim-thumb-600x600.jpg" alt="">
+            <h2>vivo Y17s</h2>
+            <p>6.56" HD+</p>
+            <p>Giá: 3.390.000₫</p>
+            <a style="text-decoration: none; color: white; font-weight: 200px;" href="vivo.html">
+                <button class="button button4">Mua ngay</button>
+            </a>        </div>
+        <div class="product-card">
+            <img class="quang" src="samsung-galaxy-s24-yellow-thumb-600x600.png" alt="">
+            <h2>Samsung Galaxy S24 5G</h2>
+            <p>6.2" Full HD+</p>
+            <p>Giá: 20.990.000₫</p>
+            <a style="text-decoration: none; color: white; font-weight: 200px;" href="samsung.html">
+                <button class="button button4">Mua ngay</button>
+            </a>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/?locale=vi_VN">Facebook</a>
+            <a href="">Instagram</a>
+            <a href="">Twitter</a>
+            <a href="">Zalo</a>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-item">
+            <h3>Cột 1</h3>
+            <p>Nội dung cột</p>
+        </div>
+        <div class="footer-item">
+            <h3>Cột 2</h3>
+            <p>Nội dung cột</p>
+
+        </div>
+        <div class="footer-item">
+            <h3>Cột 3</h3>
+            <p>Nội dung cột</p>
+        </div>
+    
+    </div>
+    <script>
+       const images = document.getElementsByClassName("quang");
+
+for (let i = 0; i < images.length; i++) {
+    images[i].addEventListener("mouseover", function() {
+        // Thay đổi ảnh khi hover
+        this.src = "tải xuống.jfif";
+    });
+
+    images[i].addEventListener("mouseout", function() {
+        // Thay đổi ảnh về ban đầu khi mouseout
+        this.src = this.getAttribute("data-original");
+    });
+
+    // Lưu trữ src ban đầu của ảnh
+    images[i].setAttribute("data-original", images[i].src);
+}
+    </script>
+   
+</body>
+</html>
